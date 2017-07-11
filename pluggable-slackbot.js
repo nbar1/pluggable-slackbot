@@ -112,7 +112,7 @@ function pluggableSlackbot(config) {
 	 * @returns {null}
 	 */
 	this.onMessage = function(message) {
-		if (message.type === 'message' && message.user && message.user !== this.botUser.id && (message.text.substr(0, 7) === this.bot.name || (message.channel[0] === 'D' && message.text))) {
+		if (message.type === 'message' && message.user && message.user !== this.botUser.id && (message.text.substr(0, this.bot.name.length) === this.bot.name || (message.channel[0] === 'D' && message.text))) {
 			this.handleMessage(message);
 		}
 
