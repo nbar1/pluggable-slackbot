@@ -11,11 +11,13 @@
   },
   "scripts": {
     "test": "yarn run test-unit",
-    "test-unit": "NODE_ENV=test mocha --require co-mocha 'lib/*.spec.js'"
+    "test-unit": "NODE_ENV=test mocha --require co-mocha 'lib/*.spec.js'",
+    "coverage": "istanbul cover _mocha $(find ./lib -name \"*.spec.js\" -not -path \"./node_modules/*\")"
   },
   "devDependencies": {
     "chai": "^4.1.0",
     "co-mocha": "^1.2.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
     "sinon": "^2.3.7",
     "sinon-chai": "^2.11.0"

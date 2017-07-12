@@ -3,7 +3,7 @@ Pluggable Slackbot
 A library to create an easily pluggable slackbot for your Slack instance.
 
 ## Installation
-`npm install pluggable-slackbot`
+`npm install pluggable-slackbot` or `yarn add pluggable-slackbot`
 
 
 ## Usage
