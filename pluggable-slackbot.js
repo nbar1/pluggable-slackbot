@@ -128,9 +128,12 @@ function pluggableSlackbot(config) {
 	 */
 	this.runPlugin = function(pluginId, message) {
 		// Ensure plugin exists
-		if (this.plugins[pluginId] === undefined) return null;
+		if (this.plugins[pluginId] === undefined) return false;
 
-		// run plugin
+		// Check if plugin is disabled
+		if (this.plugins[pluginId].config.enabled === false) return false;
+
+		// Run plugin
 		var pluginResponse = this.plugins[pluginId].run.call(this.plugins[pluginId], message);
 
 		if (pluginResponse === false) return false;

@@ -2,11 +2,14 @@
 
 module.exports = {
 	/**
-	 * enabled
+	 * config
 	 *
-	 * @type {bool}
+	 * @type {object}
+	 * @prop {bool} enabled
 	 */
-	enabled: true,
+	config: {
+		enabled: true,
+	},
 
 	/**
 	 * matchRegex
@@ -28,8 +31,6 @@ module.exports = {
 
 			var color = (probability <= roll) ? '#991a1a' : '#10a028';
 			var conclusion = (probability <= roll) ? 'lose' : 'win';
-
-			console.log(roll, probability, color);
 
 			return {
 				message: '',

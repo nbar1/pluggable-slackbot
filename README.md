@@ -8,7 +8,7 @@ A library to create an easily pluggable slackbot for your Slack instance.
 
 ## Usage
 ```js
-var pluggableSlackbot = require('./pluggable-slackbot');
+var pluggableSlackbot = require('pluggable-slackbot');
 
 var bot = new pluggableSlackbot({
 	token: 'your-slack-api-token',

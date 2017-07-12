@@ -2,11 +2,14 @@
 
 module.exports = {
 	/**
-	 * enabled
+	 * config
 	 *
-	 * @type {bool}
+	 * @type {object}
+	 * @prop {bool} enabled
 	 */
-	enabled: true,
+	config: {
+		enabled: true,
+	},
 
 	/**
 	 * matchRegex
