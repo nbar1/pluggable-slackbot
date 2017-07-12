@@ -28,4 +28,6 @@ There are example plugins in the `example-plugins` folder.
 
 
 ## Tests
-Test are coming soon!
+Tests are implemented but there is not full coverage yet
+
+`yarn test`
