@@ -12,8 +12,8 @@ A library to create an easily pluggable slackbot for your Slack instance.
 var pluggableSlackbot = require('pluggable-slackbot');
 
 var bot = new pluggableSlackbot({
-	token: 'your-slack-api-token',
-	name: 'SlackBot',
+	token: 'your-slack-api-token', // requires legacy API token
+	name: 'MyBot',
 	iconUrl: 'url-to-bot-icon',
 	pluginPath: __dirname + '/plugins',
 });
@@ -56,7 +56,7 @@ There are example plugins in the `example-plugins` folder.
 	 * @param {object} [message]
 	 * @returns {(object|bool)}
 	 */
-	run: (message) => {
+	run: function (message) {
 		return {
 			message: '',
 			options: {},
@@ -76,7 +76,7 @@ There are example plugins in the `example-plugins` folder.
 	 *
 	 * @returns {void}
 	 */
-	initialize: () => {
+	initialize: function () {
 		/**
 		 * Anything that needs to be initialized when the plugin is
 		 * first loaded goes here. This will only run when the bot

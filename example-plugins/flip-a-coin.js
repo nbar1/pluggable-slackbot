@@ -24,7 +24,7 @@ module.exports = {
 	 * @param {object} [message]
 	 * @returns {(object|bool)}
 	 */
-	run: () => {
+	run: function () {
 		return {
 			message: Math.floor(Math.random() * 2) === 0 ? 'Heads!' : 'Tails!',
 			options: {},

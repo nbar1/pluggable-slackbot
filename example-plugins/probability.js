@@ -24,7 +24,7 @@ module.exports = {
 	 * @param {object} [message]
 	 * @returns {(object|bool)}
 	 */
-	run: (message) => {
+	run: function (message) {
 		var probability = parseInt(this.matchRegex.exec(message.text)[1]);
 		var roll = Math.floor(Math.random() * 100) + 1;
 

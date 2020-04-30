@@ -24,7 +24,7 @@ module.exports = {
 	 * @param {object} [message]
 	 * @returns {(object|bool)}
 	 */
-	run: (message) => {
+	run: function (message) {
 		var numberOfSides = this.matchRegex.exec(message.text)[1];
 
 		return {
