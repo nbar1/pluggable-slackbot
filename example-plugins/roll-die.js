@@ -21,19 +21,15 @@ module.exports = {
 	/**
 	 * run
 	 *
-	 * @param {object} message
+	 * @param {object} [message]
 	 * @returns {(object|bool)}
 	 */
-	run: function (message) {
-		if ((message.text.match(this.matchRegex) || []).length > 0) {
-			var numberOfSides = this.matchRegex.exec(message.text)[1];
+	run: (message) => {
+		var numberOfSides = this.matchRegex.exec(message.text)[1];
 
-			return {
-				message: Math.floor(Math.random() * numberOfSides) + 1,
-				options: {},
-			};
-		}
-
-		return false;
+		return {
+			message: Math.floor(Math.random() * numberOfSides) + 1,
+			options: {},
+		};
 	},
 };
