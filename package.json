@@ -1,6 +1,6 @@
 {
 	"name": "pluggable-slackbot",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A pluggable SlackBot to easily interface with your Slack instance.",
 	"main": "lib/pluggable-slackbot.js",
 	"repository": "https://github.com/nbar1/pluggable-slackbot",
