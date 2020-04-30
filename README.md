@@ -62,7 +62,9 @@ There are example plugins in the `example-plugins` folder.
 			options: {},
 		};
 
-		return false;
+		/**
+		 * returning false will abort the plugins response
+		 */
 	},
 }
 ```
