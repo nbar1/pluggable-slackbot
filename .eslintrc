@@ -1,0 +1,20 @@
+{
+	"env": {
+		"es6": true,
+		"browser": true
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"extends": ["plugin:react/recommended", "prettier"],
+	"plugins": ["babel", "react", "react-hooks", "prettier"],
+	"rules": {
+		"react-hooks/rules-of-hooks": "error",
+		"react/display-name": [0]
+	}
+}

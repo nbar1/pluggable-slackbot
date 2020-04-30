@@ -24,10 +24,10 @@ module.exports = {
 	 * @param {object} message
 	 * @returns {(object|bool)}
 	 */
-	run: function(message) {
+	run: function (message) {
 		if ((message.text.match(this.matchRegex) || []).length > 0) {
 			return {
-				message: (Math.floor(Math.random() * 2) === 0) ? 'Heads!' : 'Tails!',
+				message: Math.floor(Math.random() * 2) === 0 ? 'Heads!' : 'Tails!',
 				options: {},
 			};
 		}

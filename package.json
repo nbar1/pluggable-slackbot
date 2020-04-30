@@ -1,25 +1,35 @@
 {
-  "name": "pluggable-slackbot",
-  "version": "0.0.5",
-  "description": "A pluggable SlackBot to easily interface with your Slack instance.",
-  "main": "lib/pluggable-slackbot.js",
-  "repository": "https://github.com/nbar1/pluggable-slackbot",
-  "author": "nbar1",
-  "license": "MIT",
-  "dependencies": {
-    "slackbots": "^1.0.2"
-  },
-  "scripts": {
-    "test": "yarn run test-unit",
-    "test-unit": "NODE_ENV=test mocha --require co-mocha 'lib/*.spec.js'",
-    "coverage": "istanbul cover _mocha $(find ./lib -name \"*.spec.js\" -not -path \"./node_modules/*\")"
-  },
-  "devDependencies": {
-    "chai": "^4.1.0",
-    "co-mocha": "^1.2.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^3.4.2",
-    "sinon": "^2.3.7",
-    "sinon-chai": "^2.11.0"
-  }
+	"name": "pluggable-slackbot",
+	"version": "0.0.5",
+	"description": "A pluggable SlackBot to easily interface with your Slack instance.",
+	"main": "lib/pluggable-slackbot.js",
+	"repository": "https://github.com/nbar1/pluggable-slackbot",
+	"author": "nbar1",
+	"license": "MIT",
+	"dependencies": {
+		"eslint-plugin-babel": "^5.3.0",
+		"slackbots": "^1.0.2",
+		"styled-components": "^5.1.0"
+	},
+	"scripts": {
+		"test": "yarn run test-unit",
+		"test-unit": "NODE_ENV=test mocha --require co-mocha 'lib/*.spec.js'",
+		"coverage": "istanbul cover _mocha $(find ./lib -name \"*.spec.js\" -not -path \"./node_modules/*\")"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.1.0",
+		"chai": "^4.1.0",
+		"co-mocha": "^1.2.0",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-html": "^6.0.2",
+		"eslint-plugin-prettier": "^3.1.3",
+		"eslint-plugin-react": "^7.19.0",
+		"eslint-plugin-react-hooks": "^3.0.0",
+		"istanbul": "^0.4.5",
+		"mocha": "^3.4.2",
+		"prettier": "^2.0.5",
+		"sinon": "^2.3.7",
+		"sinon-chai": "^2.11.0"
+	}
 }
