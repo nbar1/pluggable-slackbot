@@ -19,6 +19,8 @@ var bot = new pluggableSlackbot({
 });
 ```
 
+## Invoking in Slack
+
 To invoke a reponse from your bot on Slack, you can either message the bot directly or reference it in a channel by starting your message with the bots name like `SlackBot, flip a coin`
 
 ## Creating Plugins
@@ -26,9 +28,3 @@ To invoke a reponse from your bot on Slack, you can either message the bot direc
 You can create plugins and store them in the specified `pluginPath`.
 
 There are example plugins in the `example-plugins` folder.
-
-## Tests
-
-Tests are implemented but there is not full coverage yet
-
-`yarn test`
